@@ -1,0 +1,82 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	-webkit-font-smoothing:antialiased;
+}
+
+body {
+	background-color:#2E2E36;
+	color:white;
+	font-family:-apple-system, "Helvetica Neue", Helvetica, sans-serif;
+	text-align:center;
+	padding-top:3em;
+	color:#D8DCDC;
+}
+
+h1#main {
+	color:#5A5970;
+	font-weight:300;
+}
+
+section#window {
+	border-radius:10px;
+	background-color:#1A1A1F;
+	width:60%;
+	margin:4em auto;
+	padding:40px;
+}
+
+a:link, a:active, a:visited {
+	color:#7F3BF5;
+	text-decoration:none;
+}
+
+a:hover {
+	color:white;
+	text-decoration:underline;
+}
+
+h1#initialism {
+	font-size:6em;
+	color:#F22E18;
+}
+
+h2#name {
+	color:#B11110;
+	font-weight:300;
+	font-size:3em;
+	padding-bottom:0.8em;
+}
+
+button#generate {
+	padding:0.5em 1.4em;
+	font-size:1.2em;
+	background-color:#B11110;
+	color:white;
+	border:none;
+	border-radius:5px;
+	text-transform:uppercase;
+	font-weight:bolder;
+	cursor:pointer;
+	transition:0.3s background-color;
+}
+
+button#generate:enabled:hover {
+	background-color:#EB1414;
+}
+
+button#generate:disabled {
+	opacity: 0.8;
+	cursor:default;
+}
+
+@keyframes buttonPulse {
+	0% { background-color:#EB1414; }
+	50% { background-color:#B11110; }
+	100% { background-color:#EB1414; }
+}
+
+.pulse {
+	animation:buttonPulse 0.8s infinite;
+}
